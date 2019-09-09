@@ -1,0 +1,114 @@
+<!--index.wxml-->
+<!-- 首页 -->
+<view class="index">
+  <view class="top-box">
+    <navigator class="location" url="###" hover-class="none">
+      <image src='/images/location-icon.png'></image>
+      <view class="txt">西乡塘区某某大楼</view>
+    </navigator>
+    <view class="slogan">我们专注于社区团购服务！</view>
+    <button class="share" bindtap='show'><image src='/images/share-icon.png'></image></button>
+  </view>
+  <view class="swiper-box">
+    <view class='index-bg'>
+        <!-- banner -->
+        <swiper indicator-dots="true"
+            autoplay="true" circular="true" interval="3000" duration="500" indicator-color="rgba(255,255,255,0.6)" indicator-active-color="#fff">
+            <block wx:for="{{imgUrls}}" wx:key>
+              <swiper-item>
+                <navigator url='#' class='slide-navigator acea-row row-between-wrapper' hover-class='none'>
+                  <image src="{{item}}" class="slide-image"/>
+                </navigator>                
+              </swiper-item>
+            </block>
+        </swiper>
+    </view>
+  </view>
+  <!-- 播报 -->
+  <view class="broadcast">
+    <view class="broadcast-icon"><image src='/images/broadcast-icon.png'></image></view>
+    <view class="swiperTxt">
+    <!-- 新的订单来自让一切随风，8秒前 -->
+      <swiper indicator-dots="true" autoplay="auto" interval="2500" duration="500" vertical="true" circular="true">
+      <block wx:for="{{itemNew}}" wx:key>
+          <swiper-item catchtouchmove='catchTouchMove'>
+              <navigator  open-type='switchTab' class='acea-row row-between-wrapper' hover-class='none'>
+                  <view class='text acea-row row-between-wrapper'>
+                      <view class='newsTitle line1'>{{item}}</view>
+                  </view>
+              </navigator>
+          </swiper-item>
+        </block>
+    </swiper> 
+    </view>
+  </view>
+  <!-- 商品 -->
+  <view class="goodlist">
+    <view class="gooditem">
+      <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+      <view class="goodintro">
+        <view class="tit-price">
+          <navigator class="tit">精选柠檬 2个一份</navigator>
+          <text class="price">￥2.0</text>
+        </view>
+        <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+        <view class="btm-box">
+          <view class="sum">已团 <text>10</text> 份/不限量</view>
+          <navigator class="btn" hover-class="none">加入团购</navigator>
+          <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="gooditem">
+      <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+      <view class="goodintro">
+        <view class="tit-price">
+          <navigator class="tit">精选柠檬 2个一份</navigator>
+          <text class="price">￥2.0</text>
+        </view>
+        <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+        <view class="btm-box">
+          <view class="sum">已团 <text>10</text> 份/不限量</view>
+          <navigator class="btn" hover-class="none">加入团购</navigator>
+          <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="gooditem">
+      <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+      <view class="goodintro">
+        <view class="tit-price">
+          <navigator class="tit">精选柠檬 2个一份</navigator>
+          <text class="price">￥2.0</text>
+        </view>
+        <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+        <view class="btm-box">
+          <view class="sum">已团 <text>10</text> 份/不限量</view>
+          <navigator class="btn" hover-class="none">加入团购</navigator>
+          <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 弹窗 -->
+<view class="modal-box" hidden="{{flag}}">
+  <view class="modal-body">
+    <view class="modal-content">
+      <view class="modal-main">
+        <view class="mm-tit">分享到</view>
+        <view class="mm-btn">
+          <navigator class="mm-item" hover-class="none">
+            <view class="img"><image src="/images/wx-icon.png"></image></view>
+            <text>微信好友</text>
+          </navigator>
+          <navigator class="mm-item" hover-class="none">
+            <view class="img"><image src="/images/hb-icon.png"></image></view>
+            <text>生成海报</text>
+          </navigator>
+        </view>
+      </view>
+      <button class="colse" bindtap="hide">取消</button>
+    </view>
+  </view>
+</view>

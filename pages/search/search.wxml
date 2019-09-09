@@ -1,0 +1,131 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <!-- search-top -->
+   <view class='header acea-row row-center-wrapper' style='top:0rpx'>
+      <view class='acea-row row-between-wrapper input'>
+         <image src="/images/feather-search.png" class="icon-search"></image>
+         <input type='text' placeholder='点击搜索商品信息' bindconfirm="searchSubmitValue" confirm-type='search' name="search"  placeholder-class='placeholder'></input>
+      </view>
+   </view>
+   <!-- aside -->
+   <view class='aside' style='top:72rpx;margin-top:24rpx'>
+        <!-- {{index==navActive?"on":""}} 切换语法 -->
+         <view class='item acea-row row-center-wrapper on ' data-index='0' data-id='b0' bindtap='tap'><text>热门推荐</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='1' data-id='b1' bindtap='tap'><text>瓜果蔬菜</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='2' data-id='b2' bindtap='tap'><text>零食糕点</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='3' data-id='b3' bindtap='tap'><text>渔港海鲜</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='4' data-id='b4' bindtap='tap'><text>日杂用品</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='5' data-id='b5' bindtap='tap'><text>配件设备</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='6' data-id='b6' bindtap='tap'><text>服饰鞋帽</text></view>
+         <view class='item acea-row row-center-wrapper' data-index='7' data-id='b7' bindtap='tap'><text>数码电器</text></view>
+   </view>
+   <!-- conter -->
+   <view class="conter">
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>10</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>10</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>10</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>10</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>10</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>100</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="gooditem">
+        <navigator class="pictrue"><image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image></navigator>
+        <view class="goodintro">
+          <view class="tit-price">
+            <navigator class="tit">精选柠檬 2个一份</navigator>
+            <text class="price">￥2.0</text>
+          </view>
+          <view class="intro">柠檬水也叫柠檬醋,含丰富的维生素C能防止牙龈红肿出血...</view>
+          <view class="btm-box">
+            <view class="sum">已团 <text>102</text> 份/不限量</view>
+            <navigator class="btn" hover-class="none">加入团购</navigator>
+            <view class="time">06<text>时</text>41<text>分</text>34<text>秒</text></view>
+          </view>
+        </view>
+      </view>
+
+   </view>
+</view>

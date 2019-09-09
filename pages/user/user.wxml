@@ -1,0 +1,111 @@
+<!--pages/user/user.wxml-->
+<view class="user">
+<!-- 头像 -->
+  <view class='header bg-color acea-row row-between-wrapper'>
+    <view class='picTxt acea-row row-between-wrapper'>
+      <view class='pictrue'><image src='https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640'></image></view>
+      <view class='text'>
+        <view class='acea-row row-middle'>
+        <!-- {{userInfo.nickname || '请授权'}} -->
+          <view class='name line1'>无敌最俊朗</view>
+        </view>
+        <view class='phone' bindtap='goUserInfo'>180***65465</view>
+      </view>
+    </view>
+    <navigator class='fonttxt' bindtap='Setting' hover-class="none">修改</navigator>
+  </view>
+  <!-- 主要内容 -->
+  <view class="wrapper">
+    <!-- 我的团购 -->
+    <view class="w-item my-menu">
+      <view class="title acea-row row-between-wrapper">
+        <view>我的团购</view>
+      </view>
+      <view class="menuState acea-row row-middle">
+        <navigator class="item" hover-class="none">
+          <view class="pictrue"><image src="/images/icon-mytg.png"></image></view>
+          <view>全部团购</view>
+        </navigator>
+        <navigator class="item" hover-class="none">
+          <view class="pictrue"><image src="/images/icon-dsh.png"></image></view>
+          <view>待收货</view>
+        </navigator>
+        <navigator class="item" hover-class="none">
+          <view class="pictrue"><image src="/images/icon-ysh.png"></image></view>
+          <view>已收货</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 我的定位 -->
+    <view class="w-item my-location">
+      <view class="title acea-row row-between-wrapper">
+        <view>我的定位</view>
+        <navigator class="more" hover-class="none">修改<image class="icon-arrow" src="/images/icon-arrow.png"></image></navigator>
+      </view>
+      <view class="text-location">
+        <view class="text-location-item">小区定位：<image class="icon-location" src="/images/icon-location.png"></image><text>西乡塘区新村大道某某小区</text></view>
+        <view class="text-location-item">收货地址：<text>西乡塘区某某小区某某城1单元1080</text></view>
+      </view>
+    </view>
+
+    <!-- 我的订单 -->
+    <view class="w-item my-order">
+      <view class="title acea-row row-between-wrapper">
+        <view>我的订单</view>
+      </view>
+      <view class="order-list">
+        <!-- 没有数据时 -->
+        <!-- <text class="no-data">您暂时没有订单~！</text> -->
+        <!-- 有数据时 -->
+        <view class="order-item">
+          <view class="order-item-txt acea-row row-between-wrapper">
+            <view class="txt">团购号：<text>201900123</text></view>
+            <view class="txt">发布时间：<text>2019-00-12 00：00：00</text></view>
+          </view>
+          <view class="order-main">
+            <navigator class="pictrue"  hover-class="none">
+              <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
+            </navigator>
+            <view class="info">
+              <navigator class="tit" hover-class="none">精选柠檬 2个/份</navigator>
+              <view class="price">￥2.00</view>
+              <view class="txt-btn acea-row row-between-wrapper">
+                <view class="txt">送货上门</view>
+                <navigator class="btn" hover-class="none">查看</navigator>
+              </view>
+            </view>
+          </view>
+          <view class="order-item-txt acea-row row-between-wrapper">
+            <navigator class="btn"  hover-class="none">已完成</navigator>
+            <view class="txt">发布时间：<text>2019-00-12 00：00：00</text></view>
+          </view>
+        </view>
+        <view class="order-item">
+          <view class="order-item-txt acea-row row-between-wrapper">
+            <view class="txt">团购号：<text>201900123</text></view>
+            <view class="txt">发布时间：<text>2019-00-12 00：00：00</text></view>
+          </view>
+          <view class="order-main">
+            <navigator class="pictrue"  hover-class="none">
+              <image src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
+            </navigator>
+            <view class="info">
+              <navigator class="tit" hover-class="none">精选柠檬 2个/份</navigator>
+              <view class="price">￥2.00</view>
+              <view class="txt-btn acea-row row-between-wrapper">
+                <view class="txt">送货上门</view>
+                <navigator class="btn" hover-class="none">查看</navigator>
+              </view>
+            </view>
+          </view>
+          <view class="order-item-txt acea-row row-between-wrapper">
+            <navigator class="btn"  hover-class="none">已完成</navigator>
+            <view class="txt">发布时间：<text>2019-00-12 00：00：00</text></view>
+          </view>
+        </view>
+      
+      </view>
+    </view>
+
+  </view>
+</view>

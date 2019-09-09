@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+page{background-color:#fff!important;}
+.search .header{width:100%;height:96rpx;background-color:#fff;position:fixed;left:0;right:0;z-index:9;border-bottom:1rpx solid #f5f5f5;}
+.search .header .input{width:700rpx;height:60rpx;background-color:#f5f5f5;border-radius:50rpx;box-sizing:border-box;padding:0 25rpx;}
+.search .icon-search{width: 35rpx;height: 35rpx;}
+.search .header .input .placeholder{color:#999;}
+.search .header .input input{font-size:26rpx;height:100%;width:597rpx;}
+.search .aside{position:fixed;width:180rpx;left:0;bottom:0;background-color:#f7f7f7;overflow-y:auto;overflow-x:hidden;}
+.search .aside .item{height:80rpx;width:100%;font-size:26rpx;color:#424242;}
+.search .aside .item.on{background-color:#fff;border-left:4rpx solid #fc4141;width:100%;text-align:center;color:#fc4141;font-weight:bold;}
+.search .conter{margin:98rpx 0 0 180rpx;padding:0 14rpx;}
+
+.gooditem{display: flex;align-items: center;justify-content: space-between;margin-bottom: 30rpx;}
+.gooditem .pictrue{width: 170rpx;height: 170rpx;}
+.gooditem .pictrue image{ width: 164rpx;height: 164rpx;border-radius: 6rpx;}
+.goodintro{padding: 5rpx 0rpx 0rpx 20rpx;}
+.goodintro .tit-price{align-items: center;justify-content: space-between;display: flex;font-weight: bold;}
+.goodintro .tit{font-size: 22rpx;color: #333;}
+.goodintro .price{font-size: 22rpx;color: #E53935;}
+.goodintro .intro{color: #999;font-size: 20rpx;margin: 15rpx 0 10rpx;line-height: 38rpx;}
+.goodintro .btm-box{font-size: 20rpx;display: flex;position: relative;align-items: center;justify-content: space-between;}
+.goodintro .btm-box .sum text{color: #E53935}
+.goodintro .btm-box .btn{background: #E53935;color: #fff;text-align: center;border-radius: 52rpx;width: 128rpx;height:42rpx;line-height: 42rpx;}
+.goodintro .btm-box .time{color:rgba(227,57,53, .5);position: absolute;right: 0;bottom: 60rpx;font-size: 16rpx}
+.goodintro .btm-box .time text{color: #fff;background: rgba(227,57,53, .7);padding: 0 4rpx;margin: 0 3.5rpx;border-radius:2rpx;}
